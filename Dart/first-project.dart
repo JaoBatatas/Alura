@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 void main(){
   String name = 'João Paulo Ersching';
+  String nick = 'JaoBatatas';
   int age = 17;
   double height = 1.91;
   bool married = false;
@@ -9,6 +10,7 @@ void main(){
   double bigNumber = 15e12;
 
   String sentence = 'Nome: $name \n'
+  'Nickname: $nick \n'
   'Idade: $age \n'
   'Altura: $height \n'
   'Casado: $married \n'

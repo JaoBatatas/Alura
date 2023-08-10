@@ -23,4 +23,5 @@ void main(){
   print(sentence);
   print(friends);
   print(friends[0]);
+  print('Tamanho da lista: ${friends.length}');
 }

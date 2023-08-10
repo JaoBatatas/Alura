@@ -8,11 +8,12 @@ void main(){
 
   double bigNumber = 15e12;
 
-  print('Nome: $name');
-  print('Idade: $age');
-  print('Altura: $height');
-  print('Casado: $married');
+  String sentence = 'Nome: $name \n'
+  'Idade: $age \n'
+  'Altura: $height \n'
+  'Casado: $married \n'
+  'Número grande: $bigNumber \n'
+  'Pi: ${math.pi}';
 
-  print('Número grande: $bigNumber');
-  print('Pi: ${math.pi}');
+  print(sentence);
 }

@@ -17,5 +17,10 @@ void main(){
   'Número grande: $bigNumber \n'
   'Pi: ${math.pi}';
 
+  List<String> friends = ['Daniel', 'Henrique', 'Heitor', 'Guanho'];
+  //List friends = ['Daniel', 'Henrique', 'Heitor', 'Guanho', 124, 1.92];
+
   print(sentence);
+  print(friends);
+  print(friends[0]);
 }

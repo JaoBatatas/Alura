@@ -20,6 +20,10 @@ void main(){
     adult = false;
   }
 
+  for(int i = 1; i <= 10; i++){
+    print('Contador: $i');
+  }
+
   // List<String> friends = ['Daniel', 'Henrique', 'Heitor', 'Guanho'];
   // List friends = ['Daniel', 'Henrique', 'Heitor', 'Guanho', 124, 1.92];
   List<dynamic> jota = [name, nick, age, height, married, geek, adult];

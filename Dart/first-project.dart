@@ -24,6 +24,22 @@ void main(){
     print('Contador: $i');
   }
 
+  int stamina = 100;
+
+  while(stamina > 0){
+    print('+Strength');
+    stamina = stamina - math.Random().nextInt(6);
+    print('Stamina: $stamina');
+  }
+
+  int stamina2 = 100;
+
+  do{
+    print('+Strength');
+    stamina2 = stamina2 - math.Random().nextInt(6);
+    print('Stamina2: $stamina2');
+  } while(stamina2 > 0);
+
   // List<String> friends = ['Daniel', 'Henrique', 'Heitor', 'Guanho'];
   // List friends = ['Daniel', 'Henrique', 'Heitor', 'Guanho', 124, 1.92];
   List<dynamic> jota = [name, nick, age, height, married, geek, adult];

@@ -1,2 +1,2 @@
 # AluraJS
-Projetos da Alura em Javascript
+Projetos dos cursos da Alura em Javascript

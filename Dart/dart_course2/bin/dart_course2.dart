@@ -4,11 +4,15 @@ void main() {
   String color = "Azul e Roxa";
   String taste = "Doce e amarga";
   int daysSinceCrop = 10;
-  bool isRipe;
+  bool isRipe = funcIsRipe(daysSinceCrop);
 
-  if (daysSinceCrop >= 7) {
-    isRipe = true;
+  print(isRipe);
+}
+
+bool funcIsRipe(int days) {
+  if (days >= 7) {
+    return true;
   } else {
-    isRipe = false;
+    return false;
   }
 }

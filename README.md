@@ -11,3 +11,7 @@ Repositório destinado para os projetos desenvolvidos nos cursos da Alura!
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 ![](https://raw.githubusercontent.com/JaoBatatas/Alura/main/Banner/banner.png#vitrinedev)
+
+## Detalhes do projeto
+
+Projetos envolvendo as linguagens de programação javascript e dart.

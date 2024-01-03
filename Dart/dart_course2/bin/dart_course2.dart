@@ -14,7 +14,10 @@ void main() {
   // showRipe("morango", 80); || showRipe("morango", 80, color: "vermelho");
   // showRipe("morango", 80, color: "vermelho"); // color é obrigatório
 
-  print(funcHowMuchToRipe(daysSinceCrop));
+  // print(funcHowMuchToRipe(daysSinceCrop));
+
+  print(
+      finalFunc(name, weight, color, taste, funcHowMuchToRipe(daysSinceCrop)));
 }
 
 // Posicionais Obrigatórios
@@ -77,7 +80,23 @@ funcHowMuchToRipe(int daysSincePlant) {
   int daysToRipe = 30;
   int howMuchToRipe = daysToRipe - daysSincePlant;
 
-  String sentenceToRipe = "Faltam $howMuchToRipe dias para ficar madura/o";
-  String sentenceAlreadyRipe = "Já está madura/o";
+  List<dynamic> sentenceToRipe = [
+    "Faltam $howMuchToRipe dias para ficar madura/o",
+    false
+  ];
+  List<dynamic> sentenceAlreadyRipe = ["Já está madura/o", true];
   return howMuchToRipe > 0 ? sentenceToRipe : sentenceAlreadyRipe;
+}
+
+finalFunc(String name, double weight, String color, String taste,
+    List<dynamic> howMuchToRipe) {
+  if (howMuchToRipe[1] == true) {
+    String sentence =
+        "A/o $name pesa $weight gramas, é da cor $color e tem um gosto $taste. ${howMuchToRipe[0]}.";
+    return sentence;
+  } else {
+    String sentence =
+        "A/o $name pesa $weight gramas, é da cor $color e tem um gosto $taste. ${howMuchToRipe[0]}.";
+    return sentence;
+  }
 }
